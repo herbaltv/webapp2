@@ -1,0 +1,59 @@
+/*
+	Theme Name:   Aryanto Child
+	Theme URI:    http://aryanto.id/
+	Description:  Aryanto Theme for Herbal TV Project
+	Author:       Herbs
+	Author URI:   https://herbaltv.co.id
+	Template:     aryanto
+	Version:      1.0.0
+	License:      -
+	License URI:  -
+	Tags:         Tags: two-columns, buddypress, left-sidebar, right-sidebar, custom-menu, editor-style, featured-images, full-width-template, microformats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+	Text Domain:  aryanto-child
+*/
+
+
+/* write custom css after this line */
+.big-thumb-left-box-inner, .video-thumbnail, img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	-webkit-backface-visibility: hidden;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	overflow: hidden;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+}
+
+.video-playlist-item .video-info h2 {
+	font-size: 18px;
+	line-height: 23px;
+}
+.video-playlist-nav {
+	height: 340px;
+}
+.post-cat-herbal {
+	padding: 5px 0px;
+	position: relative;
+    left: 0px;
+    top: 0px;
+    padding: 10px 0;
+    font-size: 11px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    z-index: 1;
+    margin-right: 5px;
+    height: 19px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -ms-border-radius: 4px;
+    letter-spacing: 0.44px;
+}

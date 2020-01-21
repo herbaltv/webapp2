@@ -1,0 +1,68 @@
+
+---Downloaded files---
+The import files for: Main Demo were successfully downloaded!
+MAX EXECUTION TIME = 1800
+Files info:
+Site URL = http://dev.herbaltv.co.id
+Data file = C:\xampp\htdocs\wordpress\herbaltv\public/wp-content/uploads/2019/12/demo-content-import-file_2019-12-22__02-55-37.xml
+Widget file = not defined!
+Customizer file = not defined!
+
+---Debugging---
+Begin to import the media files from the XML
+
+------
+Completed AJAX call number: 1
+
+
+---Debugging---
+Begin to import the media files from the XML
+
+------
+Completed AJAX call number: 2
+
+
+---Debugging---
+Begin to import the media files from the XML
+
+------
+Completed AJAX call number: 3
+
+
+---Debugging---
+Begin to import the media files from the XML
+
+------
+Completed AJAX call number: 4
+
+
+---Debugging---
+Begin to import the media files from the XML
+
+------
+Completed AJAX call number: 5
+
+
+---Debugging---
+Begin to import the media files from the XML
+
+------
+Completed AJAX call number: 6
+
+
+---Debugging---
+Begin to import the media files from the XML
+
+---Importing content---
+
+MAX EXECUTION TIME = 300
+MEMORY LIMIT = 350M
+
+---Debugging---
+After importing the media files from the XML
+
+---pt-ocdi/before_widgets_import---
+
+
+---Completed---
+The Demo has been imported in 40.051703929901econds.
