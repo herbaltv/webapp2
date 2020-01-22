@@ -19,7 +19,8 @@ if( tie_get_option( 'footer_download_apps' ) && ! tie_get_option( 'mobile_hide_d
 	$args = array(
 		'handsimage' => tie_get_option( 'footer_dd_handsimage' ),
 		'description'   => tie_get_option( 'footer_dd_description' ),
-		'androidlink'     => tie_get_option( 'footer_dd_link_android', 'file' ),
+		'androidimg'     => tie_get_option( 'footer_dd_androidimage'),
+		'androidlink'     => tie_get_option( 'footer_dd_androidlink'),
 	);
 
 	?>
@@ -27,7 +28,7 @@ if( tie_get_option( 'footer_download_apps' ) && ! tie_get_option( 'mobile_hide_d
 		<div id="android-download" class="download-apps hb-container">
 			<div class="hb-row container">
 				<div class="hands-on hb-column">
-					<img width="300" height="250" src="<?php $args['handsimage']; ?>" class="attachment-medium size-medium" alt="" srcset="http://dev1.herbaltv.co.id/wp-content/uploads/2019/12/hphand-300x250.png 300w, http://dev1.herbaltv.co.id/wp-content/uploads/2019/12/hphand.png 474w" sizes="(max-width: 300px) 100vw, 300px">
+					<img width="300" height="250" src="<?php echo $args['handsimage']; ?>" class="attachment-medium size-medium" alt="" srcset="<?php echo $args['handsimage']; ?> 300w, <?php echo $args['handsimage']; ?>" sizes="(max-width: 300px) 100vw, 300px">
 				</div>
 				<div class="dd-description hb-column">
 					<table border="0">
@@ -35,7 +36,7 @@ if( tie_get_option( 'footer_download_apps' ) && ! tie_get_option( 'mobile_hide_d
 					<tr>
 					<td><span style="color: #ffffff;"><?php echo $args['description']; ?></span>
 					</td>
-					<td><a href="<?php echo $args['androidlink']; ?>"><img src="http://dev.herbaltv.co.id/wp-content/uploads/2020/01/android.png"></a></td>
+					<td><a href="<?php echo $args['androidlink']; ?>"><img src="<?php echo $args['androidimg']; ?>"></a></td>
 					</tr>
 					</tbody>
 					</table>

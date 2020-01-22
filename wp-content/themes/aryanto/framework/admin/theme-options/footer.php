@@ -84,6 +84,53 @@
 		));
 
 	echo '</div>';
+	
+	tie_build_theme_option(
+		array(
+			'title' =>	esc_html__( 'Mobile Only Footer Area', HERBS_TEXTDOMAIN ),
+			'id'    => 'footer-mobile-area',
+			'type'  => 'header',
+		));
+
+	tie_build_theme_option(
+		array(
+			'name'   => esc_html__( 'Enable', HERBS_TEXTDOMAIN ),
+			'id'     => 'footer_mobile_featured',
+			'toggle' => '#footer_mobile_featured_options',
+			'type'   => 'checkbox',
+		));
+
+	echo '<div id="footer_mobile_featured_options">';
+
+	tie_build_theme_option(
+		array(
+			'name' => esc_html__( 'Logo Link', HERBS_TEXTDOMAIN ),
+			'id'   => 'footer_mobile_featured_logo',
+			'type' => 'text',
+		));
+	
+	tie_build_theme_option(
+		array(
+			'name' => esc_html__( 'Menu html link', HERBS_TEXTDOMAIN ),
+			'id'   => 'footer_mobile_featured_menu',
+			'type' => 'text',
+		));
+	
+	tie_build_theme_option(
+		array(
+			'name' => esc_html__( 'Social Media', HERBS_TEXTDOMAIN ),
+			'id'   => 'footer_mobile_featured_socialicon',
+			'type' => 'text',
+		));
+	
+	tie_build_theme_option(
+		array(
+			'name' => esc_html__( 'Copyright', HERBS_TEXTDOMAIN ),
+			'id'   => 'footer_mobile_featured_copyright',
+			'type' => 'text',
+		));
+
+	echo '</div>';
 
 
 	tie_build_theme_option(
@@ -124,12 +171,18 @@
 			'id'   => 'footer_dd_description',
 			'type' => 'text',
 		));
+	
+	tie_build_theme_option(
+		array(
+			'name' => esc_html__( 'Android Image', HERBS_TEXTDOMAIN ),
+			'id'   => 'footer_dd_androidimage',
+			'type' => 'text',
+		));
 
 	tie_build_theme_option(
 		array(
 			'name' => esc_html__( 'Android Link', HERBS_TEXTDOMAIN ),
-			'id'   => 'footer_dd_link_android',
-			'hint' => '<a href="https://herbaltv.co.id/go/find-instagram-user-id" target="_blank" rel="nofollow noopener">'. esc_html__( 'Find your Instagram User ID.', HERBS_TEXTDOMAIN ) .'</a>',
+			'id'   => 'footer_dd_androidlink',
 			'type' => 'text',
 		));
 	

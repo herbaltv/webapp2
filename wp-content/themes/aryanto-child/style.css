@@ -927,7 +927,10 @@ p.bytag a.tag-cloud-link:before {
         display: none;
     }
     .has-first-big-post .post-title a {
-        font-size: 11px;
+        font-size: 15px;
+    }
+    .mag-box .post-title {
+        line-height: 18px;
     }
     .download-apps .dd-description {
         width: 100%;
