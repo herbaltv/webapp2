@@ -837,7 +837,7 @@ p.bytag a.tag-cloud-link:before {
     content: ".";
     position: absolute;
     top: -9;
-    right: -14px;
+    right: -4px;
     font-size: 23px;
     font-weight: 400;
 }
@@ -873,12 +873,40 @@ p.bytag a.tag-cloud-link:before {
 .thumb-overlay:after, 
 .first-post-gradient li:first-child .post-thumb:after, 
 .scroll-2-box .post-thumb:after {
-    border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-ms-border-radius: 10px;
+    border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-ms-border-radius: 0 0 10px 10px;
 }
 /* MOBILE FEATURED STYLE */
 @media (min-width: 320px) and (max-width: 768px) {
+    .section-wrapper {
+        margin-top: 15px;
+    }
+    .mag-box .posts-items-loaded-ajax {
+        margin-top: 0px !important;
+    }
+    a.show-more-button {
+        color: #fff;
+        width: 186px;
+        height: 24px;
+        background:#212121;
+        margin: 10px auto 20px;
+        display: table;
+        text-align: center;
+        line-height: 31px;
+        border-radius: 7px;
+        border:none;
+    }
+    a.show-more-button:hover {
+        color: #555;
+    }
+    .thumb-overlay:after, 
+    .first-post-gradient li:first-child .post-thumb:after, 
+    .scroll-2-box .post-thumb:after {
+        background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.75));
+        background: red;
+        height: 26%;
+    }
     div#footer-mobile-featured {
         padding-top: 2px;
         position: relative;
@@ -921,13 +949,18 @@ p.bytag a.tag-cloud-link:before {
     }
     .categorylistblock .big-posts-box .posts-items li{
         width: 50%;
-        margin-top: 0px;
+        margin-top: 10px;
     }
     .categorylistblock .big-posts-box .posts-items li .post-details {
         display: none;
     }
-    .has-first-big-post .post-title a {
+    .has-first-big-post ul li:first-child .post-title a {
         font-size: 15px;
+        font-weight: 700;
+    }
+    .has-first-big-post .post-title a {
+        font-size: 13px;
+        font-weight: 300;
     }
     .mag-box .post-title {
         line-height: 18px;

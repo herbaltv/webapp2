@@ -91,7 +91,7 @@ if( ! class_exists( 'TIE_POSTS_LIST' )){
 				}
 
 				elseif( $instance['style'] == 7 ){
-					$after_posts  = '<p><a class="btn btn-widget" href="http://herbaltv.co.id/">Lihat Selengkapnya</a></p>';
+					$after_posts  = '<p><a class="show-more-button" href="/">Lihat Selengkapnya</a></p>';
 				}
 			}
 
