@@ -5,6 +5,8 @@
 **/
 
 defined( 'ABSPATH' ) || exit; // Exit if accessed directly
+
+if( tie_get_option( 'menu_nav_tag' ) && ! tie_get_option( 'mobile_hide_navtag' )){
 ?>
 <div id="popular-tags" class="front-page popular-list">
 	<div class="pc-container">
@@ -25,3 +27,4 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 		</ul>
 	</div>
 </div>
+<?php } ?>

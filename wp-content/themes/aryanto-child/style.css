@@ -14,9 +14,9 @@
 	background-size: cover;
 	background-position: center center;
 	-webkit-backface-visibility: hidden;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-ms-border-radius: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
 	overflow: hidden;
 	-o-transition: all 0.4s ease;
 	transition: all 0.4s ease;
@@ -501,21 +501,6 @@
     box-shadow: none;
     border-top: 1px solid #dedede;
 }
-/*
-@media (min-width: 992px) {
-    .topblock .tie-col-md-8 {
-        width: 60.66667%;
-    }
-    .topblock .tie-col-md-4 {
-        width: 39.33333%;   
-    }
-    .footer-widget-area .tie-row .tie-col-md-3:first-child {
-        width: 35%;
-    }
-    .footer-widget-area .tie-row .tie-col-md-3 {
-        width: 20%;
-    }
-}*/
 @media (min-width: 992px) {
     .wpg-list-filter-container, .fixed-listing {
         display: flex;
@@ -529,7 +514,6 @@
         top: 130px;
     }
 }
-
 .wpg-list-filter-container .wpg-list-filter a {
     padding: 3px 9px;
     margin: 3px 2px;
@@ -756,27 +740,7 @@ li.widget-post-list::before {
     width: 20%;
     display: block;
 }
-@media (min-width: 360px) and (max-width: 768px) {
-    .download-apps .dd-description {
-        width: 100%;
-    }
-    .download-apps .hands-on {
-        display: none;
-    }
-    .download-apps td,
-    .download-apps td:first-child,
-    .download-apps td:last-child {
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
-}
-@media (min-width: 992px) {
-    
-}
-@media (min-width: 992px) {
-    
-}
+
 .scroll {
     white-space: nowrap; /* [1] */
     overflow-x: auto; /* [2] */
@@ -905,4 +869,89 @@ p.bytag a.tag-cloud-link:before {
     margin-bottom: 8px;
     color: #666666;
     line-height: 20px;
+}
+.thumb-overlay:after, 
+.first-post-gradient li:first-child .post-thumb:after, 
+.scroll-2-box .post-thumb:after {
+    border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+}
+/* MOBILE FEATURED STYLE */
+@media (min-width: 320px) and (max-width: 768px) {
+    div#footer-mobile-featured {
+        padding-top: 2px;
+        position: relative;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        box-shadow: inset 0px 3px #fd5400;
+    }
+    .categorylistblock .big-post-top-box ul li:first-child {
+        background: #edeff4;
+        padding: 8px 22px 0px;
+        position: relative;
+        width: 108%;
+        left: -22px;
+    }
+    .categorylistblock .big-post-top-box ul li:first-child a.post-thumb,
+    .categorylistblock .big-post-top-box ul li:first-child .post-details {
+        width: 50%;
+        display: block;
+        float: right;
+    }
+    .categorylistblock .big-post-top-box ul li:first-child .post-excerpt {
+        display: none;
+    }
+    .categorylistblock .mag-box div.mag-box-title, 
+    .categorylistblock .mag-box-title h3 a, 
+    .categorylistblock .block-more-button, 
+    .categorylistblock .mag-box div.mag-box-title, 
+    .categorylistblock .mag-box-title h3 a, 
+    .categorylistblock .block-more-button{
+        color: white;
+    }
+    .categorylistblock .mag-box div.mag-box-title:after, 
+    .categorylistblock .mag-box div.mag-box-title:after {
+        background: white;
+    }
+    .categorylistblock .container-wrapper {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+    }
+    .categorylistblock .big-posts-box .posts-items li{
+        width: 50%;
+        margin-top: 0px;
+    }
+    .categorylistblock .big-posts-box .posts-items li .post-details {
+        display: none;
+    }
+    .has-first-big-post .post-title a {
+        font-size: 11px;
+    }
+    .download-apps .dd-description {
+        width: 100%;
+    }
+    .download-apps .hands-on {
+        display: none;
+    }
+    .download-apps td,
+    .download-apps td:first-child,
+    .download-apps td:last-child {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .topblock .mag-box .posts-items li:not(:first-child) {
+        width: 50%;
+    }
+    .topblock .mag-box .posts-items li:last-child {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    
+}
+@media (min-width: 992px) {
+    
 }

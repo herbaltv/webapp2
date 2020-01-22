@@ -54,10 +54,8 @@ if( tie_get_option( 'rainbow_header' ) ){
 		if( tie_get_option( 'top_nav_position' ) ){
 			HERBS_HELPER::get_template_part( 'templates/header/nav', 'top' );
 		}
-
-		if( tie_get_option( 'menu_nav_tag' ) ){
-			HERBS_HELPER::get_template_part( 'templates/header/tag' );
-		}
+		
+		HERBS_HELPER::get_template_part( 'templates/header/tag' );
 
 	?>
 </header>

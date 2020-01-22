@@ -151,6 +151,13 @@
 			'type'    => 'select',
 			'options' => HERBS_ADMIN_HELPER::get_menus( false, array( '' => esc_html__( 'Main Nav Menu', HERBS_TEXTDOMAIN ), 'main-secondary' => esc_html__( 'Main Nav and Secondary Nav Menus', HERBS_TEXTDOMAIN ) ) ),
 		));
+	
+	tie_build_theme_option(
+		array(
+			'name' => esc_html__( 'Hide Top Menu Popular Tag', HERBS_TEXTDOMAIN ),
+			'id'   => 'mobile_hide_navtag',
+			'type' => 'checkbox',
+		));
 
 	echo '</div>';
 
