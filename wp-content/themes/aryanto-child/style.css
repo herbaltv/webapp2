@@ -228,13 +228,29 @@
 	font-size: 18px;
 	margin-bottom: 5px;
 }
-
+.list-discover {
+    display: none;
+}
+.list-discover ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.list-discover ul li {
+    width: 25%;
+    max-width: 422px;
+    list-style: none;
+}
 .icon-link-animated{
     display:inline-block;
-    width:100px;
+    width:77px;
     text-align:center;
-    line-height:50px;
-    margin-top:22px;
+    line-height:20px;
     text-decoration:none;
     overflow:hidden;
     color:#212121;
@@ -243,7 +259,7 @@
 .icon-link-animated span{
     display:block;
     font-size:0.95em;
-    line-height:2rem;
+    line-height:1rem;
     padding:0;
     margin:8px 0 10px;
 }
@@ -637,7 +653,6 @@ li.widget-post-list::before {
   }
   .post-title a,
   .mag-box .post-excerpt {
-    font-family: 'Barlow', sans-serif;
     font-size: 16px; 
   }
   .has-first-big-post .post-title a{
@@ -959,8 +974,7 @@ p.bytag a.tag-cloud-link:before {
         font-weight: 700;
     }
     .has-first-big-post .post-title a {
-        font-size: 13px;
-        font-weight: 300;
+        font-size: 16px;
     }
     .mag-box .post-title {
         line-height: 18px;
@@ -984,10 +998,45 @@ p.bytag a.tag-cloud-link:before {
     .topblock .mag-box .posts-items li:last-child {
         display: none;
     }
+    .topblock  .post-widget-thumbnail img {
+        opacity: 0.4;
+    }
+    .topblock .posts-list-counter li:nth-child(1):before {
+        top: 20px;
+    }
+    .topblock .posts-list-counter li:before {
+        top: 30px;
+    }  
+    .topblock .posts-list-counter li:before {
+        left: 40px;
+    }
+    .scrolling-slider .tie-slick-dots {
+        top: 56%;
+        position: absolute;
+        left: 35%;
+    }
+    .scrolling-slider.slick-dotted {
+        padding-bottom: 0px;
+    }
+    .list-discover {
+        display: block;
+    }
+    .widget-title .the-subtitle {
+        font-size: 23px;
+    }
 }
-@media (min-width: 992px) {
-    
+@media (min-width: 400px) {
+    .scrolling-slider .tie-slick-dots {
+        bottom: 0px;
+        text-align: center;
+        position: relative;
+        top:0px;
+        left:0px;
+    }
 }
-@media (min-width: 992px) {
-    
+
+@media (max-width: 991px) {
+    .list-discover ul {
+        justify-content: flex-start;
+    }
 }
