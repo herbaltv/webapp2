@@ -159,7 +159,7 @@ function herbal_register_assets(){
 	wp_register_script( 'tie-js-velocity', HERBS_TEMPLATE_URL . '/assets/js/velocity.js', array( 'jquery' ), $ver, true );
 	// Apps
 	wp_register_script( 'tie-js-apps', HERBS_TEMPLATE_URL . '/assets/js/apps.js', array( 'jquery' ), $ver, true );
-
+	wp_localize_script('tie-js-apps', 'WPURLS', array( 'siteurl' => get_option('siteurl') ));
 	// Parallax
 	wp_register_script( 'tie-js-parallax', HERBS_TEMPLATE_URL . '/assets/js/parallax.js', array( 'jquery', 'imagesloaded' ), $ver, true );
 

@@ -375,10 +375,10 @@
     ],
     "minify.cache.files_regexp": false,
     "cdn.configuration_overloaded": false,
-    "cdn.enabled": false,
+    "cdn.enabled": true,
     "cdn.debug": false,
     "cdn.flush_manually": false,
-    "cdn.engine": "stackpath2",
+    "cdn.engine": "cf2",
     "cdn.uploads.enable": true,
     "cdn.includes.enable": true,
     "cdn.includes.files": "*.css;*.js;*.gif;*.png;*.jpg;*.xml",
@@ -398,7 +398,7 @@
         "{plugins_dir}\/*.jpg",
         "{plugins_dir}\/*.png"
     ],
-    "cdn.import.files": false,
+    "cdn.import.files": "",
     "cdn.queue.interval": 900,
     "cdn.queue.limit": 25,
     "cdn.force.rewrite": false,
@@ -442,11 +442,11 @@
     "cdn.cf.id": "",
     "cdn.cf.cname": [],
     "cdn.cf.ssl": "auto",
-    "cdn.cf2.key": "",
-    "cdn.cf2.secret": "",
-    "cdn.cf2.id": "",
+    "cdn.cf2.key": "AKIAVLJJVUUSY6M34QVH",
+    "cdn.cf2.secret": "oiusy6xacktPxUkmRdQ9HiMQPr+BHBH+5sAmeQx\/",
+    "cdn.cf2.id": "d3qcbbh5equasq",
     "cdn.cf2.cname": [],
-    "cdn.cf2.ssl": "",
+    "cdn.cf2.ssl": "auto",
     "cdn.rscf.user": "",
     "cdn.rscf.key": "",
     "cdn.rscf.location": "us",
@@ -510,8 +510,12 @@
     "cdn.stackpath2.ssl": "auto",
     "cdn.reject.admins": false,
     "cdn.reject.logged_roles": false,
-    "cdn.reject.roles": [],
-    "cdn.reject.ua": [],
+    "cdn.reject.roles": [
+        ""
+    ],
+    "cdn.reject.ua": [
+        ""
+    ],
     "cdn.reject.uri": [],
     "cdn.reject.files": [
         "{uploads_dir}\/wpcf7_captcha\/*",
@@ -542,7 +546,9 @@
     "varnish.configuration_overloaded": false,
     "varnish.enabled": false,
     "varnish.debug": false,
-    "varnish.servers": [],
+    "varnish.servers": [
+        ""
+    ],
     "browsercache.configuration_overloaded": false,
     "browsercache.enabled": true,
     "browsercache.rewrite": false,
@@ -897,5 +903,8 @@
     "extensions.active_frontend": [],
     "extensions.active_dropin": [],
     "plugin.license_key": "",
-    "plugin.type": ""
+    "plugin.type": "",
+    "fragmentcache": {
+        "engine": ""
+    }
 }

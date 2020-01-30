@@ -35,7 +35,8 @@ function computeBMI() {
     }
         
     jQuery(function(){
-        jQuery("#description").load("http://dev.herbaltv.co.id/"+file); 
+        var url = WPURLS.siteurl;
+        jQuery("#description").load(url+"/"+file); 
     });
         
 }
