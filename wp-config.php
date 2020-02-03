@@ -31,7 +31,7 @@ define( 'DB_USER', 'fathanfi_dbherbaltv1' );
 define( 'DB_PASSWORD', 'dbherbaltv1' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '45.118.132.253' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
