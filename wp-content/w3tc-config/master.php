@@ -383,7 +383,7 @@
     "cdn.includes.enable": true,
     "cdn.includes.files": "*.css;*.js;*.gif;*.png;*.jpg;*.xml",
     "cdn.theme.enable": true,
-    "cdn.theme.files": "*.css;*.js;*.gif;*.png;*.jpg;*.ico;*.ttf;*.otf;*.woff;*.woff2;*.less",
+    "cdn.theme.files": "*.css;*.js;*.gif;*.png;*.jpg;*.ico;*.less",
     "cdn.minify.enable": true,
     "cdn.custom.enable": true,
     "cdn.custom.files": [

@@ -1,0 +1,4 @@
+[31-Jan-2020 08:11:32 UTC] PHP Warning:  timezone_open(): Unknown or bad timezone (https://herbaltv.co.id) in /home/herbaltv/public_html/wp-includes/functions.php on line 5442
+[31-Jan-2020 08:11:32 UTC] PHP Warning:  Illegal string offset 'args' in /home/herbaltv/public_html/wp-includes/cron.php on line 982
+[31-Jan-2020 08:11:32 UTC] PHP Warning:  Illegal string offset 'args' in /home/herbaltv/public_html/wp-includes/cron.php on line 982
+[01-Feb-2020 04:25:50 UTC] PHP Warning:  Declaration of MonsterInsights_Skin::feedback($string) should be compatible with WP_Upgrader_Skin::feedback($string, ...$args) in /home/herbaltv/public_html/wp-content/plugins/google-analytics-for-wordpress/includes/admin/licensing/skin.php on line 0

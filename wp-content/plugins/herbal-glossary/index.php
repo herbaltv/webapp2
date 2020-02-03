@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Herbal - Glossary
- * Description: The "Herbal Glossary" plugin helps you to create your own glossary of terms for Encyclopedia / Lexicon / Knowledge Base / Wiki / Dictionary in your website. This plugin works based on a custom post type and so you have a full editor at your disposal.
- * Version: 2.3
+ * Description: -
+ * Version: 1.0
  * Author: Aryanto
  * Author URI: https://aryanto.id
  */
@@ -23,7 +23,7 @@ final class WP_Glossary {
 	/**
 	 * @var string
 	 */
-	public $version = '2.3';
+	public $version = '1.0';
 
 	/**
 	 * @var WP_Glossary The single instance of the class
@@ -71,7 +71,7 @@ final class WP_Glossary {
 		define( 'WPG_VERSION', $this->version );
 		define( 'WPG_PLUGIN_URL', $this->plugin_url() );
 		define( 'WPG_PLUGIN_PATH', $this->plugin_path() );
-		define( 'WPG_TEXT_DOMAIN', 'wp_glossary' );
+		define( 'WPG_TEXT_DOMAIN', 'thelisting' );
 	}
 	
 	/**

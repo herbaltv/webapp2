@@ -38,7 +38,7 @@ class WPG_Frontend_Scripts {
 		wp_register_style( 'wpg-main-style', WPG_PLUGIN_URL . '/assets/css/style.css' );
 		
 		// Mixitup Script
-		wp_register_script( 'wpg-mixitup-script', WPG_PLUGIN_URL . '/assets/js/mixitup.min.js', array( 'jquery' ) );
+		//wp_register_script( 'wpg-mixitup-script', WPG_PLUGIN_URL . '/assets/js/mixitup.min.js', array( 'jquery' ) );
 		
 		// Tooltipster Script
 		wp_register_script( 'wpg-tooltipster-script', WPG_PLUGIN_URL . '/assets/js/jquery.tooltipster.min.js', array( 'jquery' ) );
