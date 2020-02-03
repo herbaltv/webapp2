@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "0.12.0",
+    "version": "0.13.0",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -8,6 +8,7 @@
     "cluster.messagebus.sns.topic_arn": "",
     "dbcache.configuration_overloaded": false,
     "dbcache.debug": false,
+    "dbcache.debug_purge": false,
     "dbcache.enabled": false,
     "dbcache.engine": "file",
     "dbcache.file.gc": 3600,
@@ -81,12 +82,14 @@
         "swatch-img",
         "w3-total-cache",
         "woocommerce\/assets\/images\/placeholder.png",
-        "wpcf7_captcha"
+        "wpcf7_captcha",
+        "skip_lazy"
     ],
     "lazyload.embed_method": "async_head",
     "objectcache.configuration_overloaded": false,
     "objectcache.enabled": false,
     "objectcache.debug": false,
+    "objectcache.debug_purge": false,
     "objectcache.enabled_for_wp_admin": true,
     "objectcache.fallback_transients": true,
     "objectcache.engine": "file",
@@ -127,12 +130,13 @@
     "objectcache.lifetime": 180,
     "objectcache.purge.all": false,
     "pgcache.configuration_overloaded": false,
-    "pgcache.enabled": false,
+    "pgcache.enabled": true,
     "pgcache.comment_cookie_ttl": 1800,
     "pgcache.debug": false,
+    "pgcache.debug_purge": false,
     "pgcache.engine": "file_generic",
     "pgcache.file.gc": 3600,
-    "pgcache.file.nfs": false,
+    "pgcache.file.nfs": true,
     "pgcache.file.locking": false,
     "pgcache.lifetime": 3600,
     "pgcache.memcached.servers": [
@@ -151,8 +155,8 @@
     "pgcache.redis.dbid": 0,
     "pgcache.cache.query": false,
     "pgcache.cache.home": true,
-    "pgcache.cache.feed": false,
-    "pgcache.cache.nginx_handle_xml": false,
+    "pgcache.cache.feed": true,
+    "pgcache.cache.nginx_handle_xml": true,
     "pgcache.cache.ssl": true,
     "pgcache.cache.404": false,
     "pgcache.cache.headers": [
@@ -162,7 +166,7 @@
         "P3P",
         "Link"
     ],
-    "pgcache.compatibility": false,
+    "pgcache.compatibility": true,
     "pgcache.remove_charset": false,
     "pgcache.accept.uri": [
         "sitemap(_index)?\\.xml(\\.gz)?",
@@ -185,9 +189,13 @@
     ],
     "pgcache.reject.front_page": false,
     "pgcache.reject.logged": true,
-    "pgcache.reject.logged_roles": false,
+    "pgcache.reject.logged_roles": true,
     "pgcache.reject.roles": [
-        ""
+        "administrator",
+        "editor",
+        "author",
+        "contributor",
+        "subscriber"
     ],
     "pgcache.reject.uri": [
         "wp-.*\\.php",
@@ -212,7 +220,7 @@
         "wptouch_switch_toggle"
     ],
     "pgcache.reject.request_head": false,
-    "pgcache.purge.front_page": false,
+    "pgcache.purge.front_page": true,
     "pgcache.purge.home": true,
     "pgcache.purge.post": true,
     "pgcache.purge.comments": false,
@@ -233,11 +241,11 @@
         ""
     ],
     "pgcache.purge.sitemap_regex": "([a-z0-9_\\-]*?)sitemap([a-z0-9_\\-]*)?\\.xml",
-    "pgcache.prime.enabled": false,
+    "pgcache.prime.enabled": true,
     "pgcache.prime.interval": 900,
     "pgcache.prime.limit": 10,
-    "pgcache.prime.sitemap": "",
-    "pgcache.prime.post.enabled": false,
+    "pgcache.prime.sitemap": "https:\/\/herbaltv.co.id\/sitemap_index.xml",
+    "pgcache.prime.post.enabled": true,
     "pgcache.rest": "",
     "pgcache.cookiegroups.enabled": false,
     "pgcache.cookiegroups.groups": {
@@ -280,7 +288,7 @@
     "minify.engine": "file",
     "minify.error.notification": "",
     "minify.file.gc": 86400,
-    "minify.file.nfs": false,
+    "minify.file.nfs": true,
     "minify.file.locking": false,
     "minify.memcached.servers": [
         "127.0.0.1:11211"
@@ -383,7 +391,7 @@
     "cdn.includes.enable": true,
     "cdn.includes.files": "*.css;*.js;*.gif;*.png;*.jpg;*.xml",
     "cdn.theme.enable": true,
-    "cdn.theme.files": "*.css;*.js;*.gif;*.png;*.jpg;*.ico;*.less",
+    "cdn.theme.files": "*.css;*.js;*.gif;*.png;*.jpg;*.ico;*.less;*.ttf;*.otf;*.woff;*.woff2",
     "cdn.minify.enable": true,
     "cdn.custom.enable": true,
     "cdn.custom.files": [
@@ -544,10 +552,10 @@
     "cdnfsd.stackpath2.domain": [],
     "cdnfsd.stackpath2.ssl": "auto",
     "varnish.configuration_overloaded": false,
-    "varnish.enabled": false,
+    "varnish.enabled": true,
     "varnish.debug": false,
     "varnish.servers": [
-        ""
+        "45.114.118.88"
     ],
     "browsercache.configuration_overloaded": false,
     "browsercache.enabled": true,
@@ -563,21 +571,21 @@
     "browsercache.cssjs.expires": true,
     "browsercache.cssjs.lifetime": 31536000,
     "browsercache.cssjs.nocookies": true,
-    "browsercache.cssjs.cache.control": false,
+    "browsercache.cssjs.cache.control": true,
     "browsercache.cssjs.cache.policy": "cache_public_maxage",
     "browsercache.cssjs.etag": true,
-    "browsercache.cssjs.w3tc": false,
+    "browsercache.cssjs.w3tc": true,
     "browsercache.cssjs.replace": false,
     "browsercache.cssjs.querystring": false,
     "browsercache.html.compression": true,
     "browsercache.html.brotli": false,
     "browsercache.html.last_modified": true,
-    "browsercache.html.expires": false,
+    "browsercache.html.expires": true,
     "browsercache.html.lifetime": 3600,
-    "browsercache.html.cache.control": false,
+    "browsercache.html.cache.control": true,
     "browsercache.html.cache.policy": "cache_public_maxage",
     "browsercache.html.etag": true,
-    "browsercache.html.w3tc": false,
+    "browsercache.html.w3tc": true,
     "browsercache.html.replace": false,
     "browsercache.other.last_modified": true,
     "browsercache.other.compression": true,
@@ -585,13 +593,15 @@
     "browsercache.other.expires": true,
     "browsercache.other.lifetime": 31536000,
     "browsercache.other.nocookies": true,
-    "browsercache.other.cache.control": false,
+    "browsercache.other.cache.control": true,
     "browsercache.other.cache.policy": "cache_public_maxage",
     "browsercache.other.etag": true,
-    "browsercache.other.w3tc": false,
+    "browsercache.other.w3tc": true,
     "browsercache.other.replace": false,
     "browsercache.other.querystring": false,
-    "browsercache.replace.exceptions": [],
+    "browsercache.replace.exceptions": [
+        ""
+    ],
     "browsercache.security.session.cookie_httponly": "",
     "browsercache.security.session.cookie_secure": "",
     "browsercache.security.session.use_only_cookies": "",
@@ -609,7 +619,7 @@
     "browsercache.security.pkp.extra": "maxage",
     "browsercache.security.pkp.report.url": "",
     "browsercache.security.pkp.report.only": "0",
-    "browsercache.security.referrer.policy": "false",
+    "browsercache.security.referrer.policy": true,
     "browsercache.security.referrer.policy.directive": "no-referrer-when-downgrade",
     "browsercache.security.csp": false,
     "browsercache.security.csp.base": "",
@@ -626,6 +636,8 @@
     "browsercache.security.csp.frame.ancestors": "",
     "browsercache.security.csp.sandbox": "",
     "browsercache.security.csp.default": "",
+    "browsercache.security.fp": false,
+    "browsercache.security.fp.values": [],
     "mobile.configuration_overloaded": false,
     "mobile.enabled": false,
     "mobile.rgroups": {
@@ -874,14 +886,14 @@
             ]
         }
     },
-    "common.track_usage": true,
+    "common.track_usage": false,
     "common.tweeted": false,
     "config.check": true,
     "config.path": "",
     "widget.latest.items": 3,
     "widget.latest_news.items": 5,
     "widget.pagespeed.enabled": true,
-    "widget.pagespeed.key": "",
+    "widget.pagespeed.key": "AIzaSyBoIxL5pYB-JBF249j5FTssJRl3oRKXfK8",
     "widget.pagespeed.key.restrict.referrer": "",
     "widget.pagespeed.show_in_admin_bar": false,
     "timelimit.email_send": 180,
@@ -905,6 +917,10 @@
     "plugin.license_key": "",
     "plugin.type": "",
     "fragmentcache": {
-        "engine": ""
+        "engine": "file"
+    },
+    "pgcache.bad_behavior_path": "",
+    "newrelic": {
+        "monitoring_type": "apm"
     }
 }
